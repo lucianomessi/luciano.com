@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFoodSaver - Reducción de Desperdicio de Alimentos</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vincular el archivo de estilos CSS -->
+    <link rel="icon" href="favicon.ico"> <!-- Icono de la empresa -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="logo.png" alt="Logo de EcoFoodSaver" class="logo">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">Acerca de</a></li>
+                    <li class="nav__item"><a href="#offers" class="nav__link">Ofertas</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1 class="hero__title">Bienvenido a EcoFoodSaver</h1>
+            <p class="hero__subtitle">Ayudamos a reducir el desperdicio de alimentos ofreciendo ofertas especiales en productos cercanos a su fecha de vencimiento.</p>
+            <a href="#offers" class="btn btn--primary">Ver Ofertas</a>
+        </div>
+    </section>
+    
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section__title">Acerca de EcoFoodSaver</h2>
+            <p class="section__description">En EcoFoodSaver, nos comprometemos a reducir el desperdicio de alimentos y promover prácticas de consumo más sostenibles. Trabajamos en colaboración con tiendas, restaurantes y productores para ofrecer productos frescos y deliciosos a precios reducidos.</p>
+        </div>
+    </section>
+    
+    <section id="offers" class="section">
+        <div class="container">
+            <h2 class="section__title">Ofertas Especiales</h2>
+            <div class="offer">
+                <img src="offer1.jpg" alt="Oferta Especial 1" class="offer__image">
+                <h3 class="offer__title">Frutas y Verduras Frescas al 50% de Descuento</h3>
+                <p class="offer__description">Aprovecha esta oferta especial y llévate frutas y verduras frescas con un 50% de descuento.</p>
+            </div>
+            <div class="offer">
+                <img src="offer2.jpg" alt="Oferta Especial 2" class="offer__image">
+                <h3 class="offer__title">Productos Horneados del Día con Descuento</h3>
+                <p class="offer__description">No te pierdas nuestros productos horneados del día con descuentos especiales.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section__title">Contacto</h2>
+            <p class="section__description">¿Tienes alguna pregunta o comentario? ¡No dudes en ponerte en contacto con nosotros!</p>
+            <form action="contact.php" method="post" class="form">
+                <label for="name" class="form__label">Nombre:</label>
+                <input type="text" id="name" name="name" class="form__input" required>
+                <label for="email" class="form__label">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" class="form__input" required>
+                <label for="message" class="form__label">Mensaje:</label>
+                <textarea id="message" name="message" class="form__textarea" required></textarea>
+                <button type="submit" class="btn btn--primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <img src="logo-white.png" alt="Logo de EcoFoodSaver" class="footer__logo">
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Términos y Condiciones</a></li>
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Política de Privacidad</a></li>
+                </ul>
+            </nav>
+            <p class="footer__copyright">&copy; 2024 EcoFoodSaver - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
